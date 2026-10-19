@@ -7,33 +7,73 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <!-- cabeçalho -->
-    
-<header>
-    <div class="conteudo-header">
-     <!-- <h1>Infopeças</h1>  -->
+    <!-- Cabeçalho -->
+    <header>
+        <div class="conteudo-header">
+            <div class="logo">
+                <img src="imagens/logo.png" alt="Logo InfoPeças">
+            </div>
 
-        <div class="logo">
-            <img src="imagens/logo.png" alt="Logo InfoPeças">
+            <nav class="menu">
+                <a href="index.html">Início</a>
+                <a href="#hardware">Hardware</a>
+                <a href="#memorias">Memórias</a>
+                <a href="#contato">Contato</a>
+            </nav>
         </div>
+    </header>
 
-        <nav class="menu">
-            <a href="index.html">Início</a>
-            <a href="#Hardware">Hardware</a>
-            <a href="#Software">Software</a>
-            <a href="#Contato">Contato</a>
-        </nav>
-
-    </div>
-</header>
-
-<!-- corpo  -->
+    <!-- Conteúdo Principal -->
     <main>
+        <!-- Seção 1: Hardware -->
+        <section id="hardware">
+            <h2>Produtos de Hardware</h2>
+            <p>Confira os melhores equipamentos de nossa loja</p>
+            
+            <div class="produtos">
+                <div class="produto-card">
+                    <img src="imagens/placa_video_sem_fundo.png" alt="Placa de Vídeo">
+                    <h4>Placa de Vídeo</h4>
+                    <p>Alta Performance</p>
+                    <p class="preco">R$ 1.200,00</p>
+                </div>
 
+                <div class="produto-card">
+                    <img src="imagens/placa_mae_sem_fundo.png" alt="Placa Mãe Gigabyte">
+                    <h4>Gigabyte ms345 de 32GB</h4>
+                    <p>Placa Mãe com chipset avançado</p>
+                    <p class="preco">R$ 975,60</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção 2: Memória e Armazenamento -->
+        <section id="memorias">
+            <h2>Elementos de Memória e Armazenamento</h2>
+            <p>Memórias e SSD originais de fábrica</p>
+            
+            <div class="produtos">
+                <div class="produto-card">
+                    <img src="imagens/ssd_kingston_sem_fundo.png" alt="SSD Kingston">
+                    <h4>SSD</h4>
+                    <p>Velocidade extrema para seus dados</p>
+                    <p class="preco">R$ 580,00</p>
+                </div>
+
+                <div class="produto-card">
+                    <img src="imagens/memoria_ram_sem_fundo.png" alt="Memória RAM">
+                    <h4>Memória RAM</h4>
+                    <p>Placas de memória de alta performance</p>
+                    <p class="preco">R$ 199,99</p>
+                </div>
+            </div>
+        </section>
     </main>
-<!-- rodapé -->
-    <footer>
 
+    <!-- Rodapé -->
+    <footer class="rodape">
+        <p>&copy; 2026 - Lojas Tec. Todos os direitos reservados.</p>
+        <p>Contato: atendimento@laotech.com.br</p>
     </footer>
 </body>
 </html>
