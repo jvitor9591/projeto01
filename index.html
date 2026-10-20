@@ -14,12 +14,12 @@
                 <img src="imagens/logo.png" alt="Logo InfoPeças">
             </div>
 
-            <nav class="menu">
-                <a href="index.html">Início</a>
-                <a href="#hardware">Hardware</a>
-                <a href="#memorias">Memórias</a>
-                <a href="#contato">Contato</a>
-            </nav>
+           <nav class="menu">
+    <a href="#" onclick="mostrarSecao('inicio')">Início</a>
+    <a href="#" onclick="mostrarSecao('hardware')">Hardware</a>
+    <a href="#" onclick="mostrarSecao('software')">Software</a>
+    <a href="#contato" onclick="mostrarSecao('contato'); return false;">Contato</a>
+</nav>
         </div>
     </header>
 
@@ -47,33 +47,92 @@
             </div>
         </section>
 
-        <!-- Seção 2: Memória e Armazenamento -->
-        <section id="memorias">
-            <h2>Elementos de Memória e Armazenamento</h2>
-            <p>Memórias e SSD originais de fábrica</p>
-            
-            <div class="produtos">
-                <div class="produto-card">
-                    <img src="imagens/ssd_kingston_sem_fundo.png" alt="SSD Kingston">
-                    <h4>SSD</h4>
-                    <p>Velocidade extrema para seus dados</p>
-                    <p class="preco">R$ 580,00</p>
-                </div>
+<!-- Seção 2: Memória e Armazenamento -->
+<section id="memorias" style="display: none;">
+    <h2>Memória e Armazenamento</h2>
+    <p>Memórias e SSD originais de fábrica</p>
 
-                <div class="produto-card">
-                    <img src="imagens/memoria_ram_sem_fundo.png" alt="Memória RAM">
-                    <h4>Memória RAM</h4>
-                    <p>Placas de memória de alta performance</p>
-                    <p class="preco">R$ 199,99</p>
-                </div>
-            </div>
-        </section>
+    <div class="produtos">
+        <div class="produto-card">
+            <img src="imagens/ssd_kingston_sem_fundo.png" alt="SSD Kingston">
+            <h4>SSD</h4>
+            <p>Velocidade extrema para seus dados</p>
+            <p class="preco">R$ 580,00</p>
+        </div>
+
+        <div class="produto-card">
+            <img src="imagens/memoria_ram_sem_fundo.png" alt="Memória RAM">
+            <h4>Memória RAM</h4>
+            <p>Placas de memória de alta performance</p>
+            <p class="preco">R$ 199,99</p>
+        </div>
+    </div>
+</section>
+
+<!-- Seção de Software -->
+<section id="software" style="display: none;">
+    <h2>Produtos de Software</h2>
+    <p>Confira nossos programas e soluções digitais</p>
+
+    <div class="produtos">
+        <div class="produto-card">
+            <h4>Windows</h4>
+            <p>Sistema operacional para computadores</p>
+            <img src="imagens/windows11.webp" alt="Windows">
+            <p class="preco">R$2000,00</p>
+        </div>
+
+        <div class="produto-card">
+            <h4>Antivírus</h4>
+            <p>Proteção para seu computador</p>
+             <img src="imagens/antivirus.webp" alt="Antivirus">
+            <p class="preco">R$500,00</p>
+        </div>
+         <a href="#" onclick="mostrarSecao(''); return false;"></a>
+    </div>
+</section>
+
     </main>
+<section class="fale-conosco" id="contato">
+    <h2>Fale Conosco</h2>
 
+    <form>
+        <label for="nome">Nome:</label>
+       <P> <input type="text" id="nome" name="nome" required></P>
+
+        </P><label for="email">E-mail:</label><P>
+
+        </P>
+        <input type="email" id="email" name="email" required><P>
+
+        </P><label for="comentario">Comentários:</label><P>
+       <P> <textarea id="comentario" name="comentario" rows="-5" required></textarea><P>
+
+        <button type="submit">Enviar mensagem</button>
+    </form>
+</section>
     <!-- Rodapé -->
     <footer class="rodape">
         <p>&copy; 2026 - Lojas Tec. Todos os direitos reservados.</p>
         <p>Contato: atendimento@laotech.com.br</p>
     </footer>
+
+    
+<script>
+    function mostrarSecao(secao) {
+        document.getElementById('hardware').style.display = 'none';
+        document.getElementById('memorias').style.display = 'none';
+        document.getElementById('software').style.display = 'none';
+
+        if (secao === 'inicio') {
+            document.getElementById('hardware').style.display = 'block';
+            document.getElementById('memorias').style.display = 'block';
+            document.getElementById('software').style.display = 'block';
+        } else {
+            document.getElementById(secao).style.display = 'block';
+        }
+    }
+</script>
+
 </body>
 </html>

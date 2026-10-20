@@ -114,9 +114,78 @@ section h2 {
 
 /* Rodapé */
 .rodape {
-    background-color: #050505;
+    background-color: #fd0000;
     color: white;
     text-align: center;
     padding: 20px;
     margin-top: 40px;
 }
+
+/* responsividade para celular */
+@media(max-width:600px){
+    header{
+    padding: 15px;}
+    nav a{
+        display: inline-block;
+        margin: 8px;
+    }
+    .fale-conosco {
+    max-width: 600px;
+    text-align: center;
+    margin: 40px auto;
+    padding: 30px;
+    background: #110404;
+    color: #ec0303;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.fale-conosco h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.fale-conosco label {
+    display: flex;
+    margin: 15px 0 6px;
+}
+
+.fale-conosco input,
+.fale-conosco textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #eb0e0e;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.fale-conosco button {
+    width: 100%;
+    margin-top: 18px;
+    padding: 12px;
+    background: red;
+    color: rgb(15, 1, 1);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+label{
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+input,textarea{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.fale-conosco button:hover {
+    background: #c00;
+    margin-top: 20px;
+    transform: translateY(25px);
+    box-shadow: 0 6px 12px rgb(228, 3, 3);
+
+}}
